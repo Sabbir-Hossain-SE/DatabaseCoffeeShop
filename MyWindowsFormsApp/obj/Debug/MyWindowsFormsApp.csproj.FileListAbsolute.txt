@@ -1,0 +1,44 @@
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\bin\Debug\MyWindowsFormsApp.exe.config
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\bin\Debug\MyWindowsFormsApp.exe
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\bin\Debug\MyWindowsFormsApp.pdb
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.csprojAssemblyReference.cache
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.ArrayUi.resources
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.DataTypeUi.resources
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.Home.resources
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.ItemUi.resources
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.ListUi.resources
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.Properties.Resources.resources
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.csproj.GenerateResource.cache
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.exe
+C:\Phase 2\Batch 8\Day8\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.pdb
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\bin\Debug\MyWindowsFormsApp.exe.config
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\bin\Debug\MyWindowsFormsApp.exe
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\bin\Debug\MyWindowsFormsApp.pdb
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.csprojAssemblyReference.cache
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.ArrayUi.resources
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.DataTypeUi.resources
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.Home.resources
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.ItemUi.resources
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.ListUi.resources
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.Properties.Resources.resources
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.csproj.GenerateResource.cache
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.exe
+C:\Phase 2\Batch 8\Day9\batch8\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.pdb
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\bin\Debug\MyWindowsFormsApp.exe.config
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\bin\Debug\MyWindowsFormsApp.exe
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\bin\Debug\MyWindowsFormsApp.pdb
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.csprojAssemblyReference.cache
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.ArrayUi.resources
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.DataTypeUi.resources
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.Home.resources
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.ItemUi.resources
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.ListUi.resources
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.Properties.Resources.resources
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.csproj.GenerateResource.cache
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.exe
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.pdb
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.CutomerUi.resources
+C:\Users\Gili Gili\Desktop\Practice\MyWindowsFormsApp\MyWindowsFormsApp\obj\Debug\MyWindowsFormsApp.OrderUi.resources
