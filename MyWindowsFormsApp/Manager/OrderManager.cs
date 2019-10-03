@@ -11,28 +11,31 @@ namespace MyWindowsFormsApp.Manager
     {
         OrderRepository _orderRepository = new OrderRepository();
 
-        public bool Add(int quantity, double totalPrice, int itemId, int customerId)
+        public bool Add(int quantity,double totalPrice, string custName, string itemName)
         {
-            return _orderRepository.Add(quantity, totalPrice, itemId, customerId);
+            return _orderRepository.Add(quantity, totalPrice,custName,itemName);
         }
-   
+        public bool IsNameExist(string custName)
+        {
+            return _orderRepository.IsNameExist(custName);
+        }
 
         public bool Delete(int id)
         {
             return _orderRepository.Delete(id);
         }
-        public bool Update(int quantity, double totalPrice, int itemId, int customerId, int id)
+        public bool Update(int quantity, double totalPrice, string custName, string itemName, int id)
         {
-            return _orderRepository.Update(quantity, totalPrice, itemId, customerId, id);
+            return _orderRepository.Update(quantity, totalPrice, custName, itemName, id);
         }
         public DataTable Display()
         {
             return _orderRepository.Display();
         }
 
-        public DataTable Search(int cutomerId)
+        public DataTable Search(string custName)
         {
-            return _orderRepository.Search(cutomerId);
+            return _orderRepository.Search(custName);
         }
 
     }

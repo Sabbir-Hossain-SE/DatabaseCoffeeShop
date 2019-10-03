@@ -13,7 +13,6 @@ using MyWindowsFormsApp.Manager;
 
 namespace MyWindowsFormsApp
 {
-
     public partial class OrderUi : Form
     {
         OrderManager _orderManager = new OrderManager();
@@ -27,34 +26,19 @@ namespace MyWindowsFormsApp
             //Mandatory
             if (String.IsNullOrEmpty(quantityTextBox.Text))
             {
-                MessageBox.Show("Qunatity can not be Empty!!");
-                return;
-            }
-            if (String.IsNullOrEmpty(totalPriceTextBox.Text))
-            {
-                MessageBox.Show("Total Price can not be Empty!!");
-                return;
-            }
-            if (String.IsNullOrEmpty(itemIdTextBox.Text))
-            {
-                MessageBox.Show("Item ID can not be Empty!!");
-                return;
-            }
-            if (String.IsNullOrEmpty(customerIdTextBox.Text))
-            {
-                MessageBox.Show("Customer ID can not be Empty!!");
+                MessageBox.Show("Price can not be Empty!!");
                 return;
             }
 
             //Unique
-            //if (_itemManager.IsNameExist(idTextBox.Text))
-            //{
-            //    MessageBox.Show(nameTextBox.Text + " Already Exist!!");
-            //    return;
-            //}
+            if (_orderManager.IsNameExist(quantityTextBox.Text))
+            {
+                MessageBox.Show(quantityTextBox.Text + " Already Exist!!");
+                return;
+            }
 
             //Add/Insert
-            if (_orderManager.Add(Convert.ToInt32(quantityTextBox.Text), Convert.ToDouble(totalPriceTextBox.Text), Convert.ToInt32(itemIdTextBox.Text), Convert.ToInt32(customerIdTextBox.Text)))
+            if (_orderManager.Add(Convert.ToInt32(quantityTextBox.Text), Convert.ToDouble( totalPriceextBox.Text), custNameTextBox.Text, itemNameTextBox.Text ))
             {
                 MessageBox.Show("Saved");
             }
@@ -117,30 +101,14 @@ namespace MyWindowsFormsApp
                 MessageBox.Show("Id Can not be Empty!!!");
                 return;
             }
-            //Mandatory
-            if (String.IsNullOrEmpty(quantityTextBox.Text))
+            //Set Price as Mandatory
+            if (String.IsNullOrEmpty(totalPriceextBox.Text))
             {
-                MessageBox.Show("Qunatity can not be Empty!!");
-                return;
-            }
-            if (String.IsNullOrEmpty(totalPriceTextBox.Text))
-            {
-                MessageBox.Show("Total Price can not be Empty!!");
-                return;
-            }
-            if (String.IsNullOrEmpty(itemIdTextBox.Text))
-            {
-                MessageBox.Show("Item ID can not be Empty!!");
-                return;
-            }
-            if (String.IsNullOrEmpty(customerIdTextBox.Text))
-            {
-                MessageBox.Show("Customer ID can not be Empty!!");
+                MessageBox.Show("Price Can not be Empty!!!");
                 return;
             }
 
-
-            if (_orderManager.Update(Convert.ToInt32(quantityTextBox.Text), Convert.ToDouble(totalPriceTextBox.Text), Convert.ToInt32(itemIdTextBox.Text), Convert.ToInt32(customerIdTextBox.Text), Convert.ToInt32(idTextBox.Text)))
+            if (_orderManager.Update(Convert.ToInt32(quantityTextBox.Text), Convert.ToDouble(totalPriceextBox.Text), custNameTextBox.Text, itemNameTextBox.Text, Convert.ToInt32(idTextBox.Text)))
             {
                 MessageBox.Show("Updated");
                 DataTable dataTable = _orderManager.Display();
@@ -161,7 +129,7 @@ namespace MyWindowsFormsApp
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            DataTable dataTable = _orderManager.Search(Convert.ToInt32(customerIdTextBox.Text));
+            DataTable dataTable = _orderManager.Search(custNameTextBox.Text);
             if (dataTable.Rows.Count > 0)
             {
                 showDataGridView.DataSource = dataTable;
@@ -171,15 +139,5 @@ namespace MyWindowsFormsApp
                 MessageBox.Show("No Data Found");
             }
         }
-
-
     }
-
-
 }
-
-
-
-
-
-

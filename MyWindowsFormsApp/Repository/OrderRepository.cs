@@ -12,7 +12,7 @@ namespace MyWindowsFormsApp.Repository
     {
 
         //Method
-        public bool Add(int quantity, double totalPrice,int itemId,int customerId)
+        public bool Add(int quantity,double totalPrice,string custName,string itemName)
         {
             bool isAdded = false;
             try
@@ -23,7 +23,7 @@ namespace MyWindowsFormsApp.Repository
 
                 //Command 
                 //INSERT INTO Items (Name, Price) Values ('Black', 120)
-                string commandString = @"INSERT INTO Orders (Quantity, TotalPrice, ItemID, CustomerID) Values (" + quantity + ", " + totalPrice + "," + itemId + "," + customerId + ")";
+                string commandString = @"INSERT INTO Orders (Quantity, TotalPrice,CustomerName,ItemName) Values (" + quantity + ", " + totalPrice + ",'" + custName + "', '" + itemName + "')";
                 SqlCommand sqlCommand = new SqlCommand(commandString, sqlConnection);
 
                 //Open
@@ -49,43 +49,43 @@ namespace MyWindowsFormsApp.Repository
 
             return isAdded;
         }
-        //public bool IsNameExist(string name)
-        //{
-        //    bool isExist = false;
-        //    try
-        //    {
-        //        //Connection
-        //        string connectionString = @"Server=SABBIR; Database=CoffeeShop1; Integrated Security=True";
-        //        SqlConnection sqlConnection = new SqlConnection(connectionString);
+        public bool IsNameExist(string custName)
+        {
+            bool isExist = false;
+            try
+            {
+                //Connection
+                string connectionString = @"Server=SABBIR; Database=CoffeeShop1; Integrated Security=True";
+                SqlConnection sqlConnection = new SqlConnection(connectionString);
 
-        //        //Command 
-        //        //INSERT INTO Items (Name, Price) Values ('Black', 120)
-        //        string commandString = @"SELECT * FROM Orders WHERE Name='" + name + "'";
-        //        SqlCommand sqlCommand = new SqlCommand(commandString, sqlConnection);
+                //Command 
+                //INSERT INTO Items (Name, Price) Values ('Black', 120)
+                string commandString = @"SELECT * FROM Orders WHERE Name='" + custName + "'";
+                SqlCommand sqlCommand = new SqlCommand(commandString, sqlConnection);
 
-        //        //Open
-        //        sqlConnection.Open();
+                //Open
+                sqlConnection.Open();
 
-        //        //Show
-        //        SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
-        //        DataTable dataTable = new DataTable();
-        //        sqlDataAdapter.Fill(dataTable);
-        //        if (dataTable.Rows.Count > 0)
-        //        {
-        //            isExist = true;
-        //        }
+                //Show
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                DataTable dataTable = new DataTable();
+                sqlDataAdapter.Fill(dataTable);
+                if (dataTable.Rows.Count > 0)
+                {
+                    isExist = true;
+                }
 
 
-        //        //Close
-        //        sqlConnection.Close();
+                //Close
+                sqlConnection.Close();
 
-        //    }
-        //    catch (Exception exeption)
-        //    {
-        //        // MessageBox.Show(exeption.Message);
-        //    }
-        //    return isExist;
-        //}
+            }
+            catch (Exception exeption)
+            {
+                // MessageBox.Show(exeption.Message);
+            }
+            return isExist;
+        }
         public bool Delete(int id)
         {
             try
@@ -122,7 +122,7 @@ namespace MyWindowsFormsApp.Repository
             return false;
         }
 
-        public bool Update(int quantity, double totalPrice, int itemId, int customerId, int id)
+        public bool Update(int quantity,double totalPrice,string custName,string itemName, int id)
         {
             try
             {
@@ -132,7 +132,7 @@ namespace MyWindowsFormsApp.Repository
 
                 //Command 
                 //UPDATE Items SET Name =  'Hot' , Price = 130 WHERE ID = 1
-                string commandString = @"UPDATE Orders SET Quantity =  " + quantity + " , TotalPrice = " + totalPrice + ",ItemID = " + itemId + " ,CustomerID = " + customerId + "WHERE ID = " + id + "";
+                string commandString = @"UPDATE Orders SET Quantity =  " + quantity + " , TotalPrice = " + totalPrice + ", CustomerName = '" + custName + "', ItemName = '" + itemName + "' WHERE ID = " + id + "";
                 SqlCommand sqlCommand = new SqlCommand(commandString, sqlConnection);
 
                 //Open
@@ -166,7 +166,7 @@ namespace MyWindowsFormsApp.Repository
 
             //Command 
             //INSERT INTO Items (Name, Price) Values ('Black', 120)
-            string commandString = @"SELECT * FROM Orders ";
+            string commandString = @"SELECT * FROM Orders";
             SqlCommand sqlCommand = new SqlCommand(commandString, sqlConnection);
 
             //Open
@@ -195,7 +195,7 @@ namespace MyWindowsFormsApp.Repository
             //}
             return dataTable;
         }
-        public DataTable Search(int customerId)
+        public DataTable Search(string custName)
         {
             // try
             // {
@@ -205,7 +205,7 @@ namespace MyWindowsFormsApp.Repository
 
             //Command 
             //INSERT INTO Items (Name, Price) Values ('Black', 120)
-            string commandString = @"SELECT * FROM Orders WHERE CustomerID=" + customerId + "";
+            string commandString = @"SELECT * FROM Orders WHERE CustomerName='" + custName + "'";
             SqlCommand sqlCommand = new SqlCommand(commandString, sqlConnection);
 
             //Open

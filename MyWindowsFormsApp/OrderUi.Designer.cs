@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.totalPriceTextBox = new System.Windows.Forms.TextBox();
+            this.itemNameTextBox = new System.Windows.Forms.TextBox();
             this.showDataGridView = new System.Windows.Forms.DataGridView();
-            this.Address = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.itemIdTextBox = new System.Windows.Forms.TextBox();
+            this.custNameTextBox = new System.Windows.Forms.TextBox();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.quantityTextBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
@@ -42,8 +42,7 @@
             this.deleteButton = new System.Windows.Forms.Button();
             this.showButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
-            this.customerIdTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.totalPriceextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.showDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -51,17 +50,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(409, 105);
+            this.label4.Location = new System.Drawing.Point(409, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 31;
+            this.label4.Text = "Item Name";
             // 
-            // totalPriceTextBox
+            // itemNameTextBox
             // 
-            this.totalPriceTextBox.Location = new System.Drawing.Point(502, 79);
-            this.totalPriceTextBox.Name = "totalPriceTextBox";
-            this.totalPriceTextBox.Size = new System.Drawing.Size(100, 20);
-            this.totalPriceTextBox.TabIndex = 30;
+            this.itemNameTextBox.Location = new System.Drawing.Point(517, 105);
+            this.itemNameTextBox.Name = "itemNameTextBox";
+            this.itemNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.itemNameTextBox.TabIndex = 30;
             // 
             // showDataGridView
             // 
@@ -71,14 +71,14 @@
             this.showDataGridView.Size = new System.Drawing.Size(434, 150);
             this.showDataGridView.TabIndex = 29;
             // 
-            // Address
+            // label2
             // 
-            this.Address.AutoSize = true;
-            this.Address.Location = new System.Drawing.Point(409, 82);
-            this.Address.Name = "Address";
-            this.Address.Size = new System.Drawing.Size(58, 13);
-            this.Address.TabIndex = 26;
-            this.Address.Text = "Total Price";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(409, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 13);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Customer Name";
             // 
             // label3
             // 
@@ -97,13 +97,14 @@
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 28;
             this.label1.Text = "Quantity";
+          
             // 
-            // itemIdTextBox
+            // custNameTextBox
             // 
-            this.itemIdTextBox.Location = new System.Drawing.Point(502, 105);
-            this.itemIdTextBox.Name = "itemIdTextBox";
-            this.itemIdTextBox.Size = new System.Drawing.Size(100, 20);
-            this.itemIdTextBox.TabIndex = 23;
+            this.custNameTextBox.Location = new System.Drawing.Point(517, 79);
+            this.custNameTextBox.Name = "custNameTextBox";
+            this.custNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.custNameTextBox.TabIndex = 23;
             // 
             // idTextBox
             // 
@@ -127,6 +128,7 @@
             this.searchButton.TabIndex = 18;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // updateButton
             // 
@@ -136,6 +138,7 @@
             this.updateButton.TabIndex = 19;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // deleteButton
             // 
@@ -145,6 +148,7 @@
             this.deleteButton.TabIndex = 20;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // showButton
             // 
@@ -154,6 +158,7 @@
             this.showButton.TabIndex = 21;
             this.showButton.Text = "Show";
             this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
             // addButton
             // 
@@ -163,32 +168,23 @@
             this.addButton.TabIndex = 22;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // customerIdTextBox
+            // totalPriceextBox
             // 
-            this.customerIdTextBox.Location = new System.Drawing.Point(421, 137);
-            this.customerIdTextBox.Name = "customerIdTextBox";
-            this.customerIdTextBox.Size = new System.Drawing.Size(100, 20);
-            this.customerIdTextBox.TabIndex = 32;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(344, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Custoomer ID";
+            this.totalPriceextBox.Location = new System.Drawing.Point(412, 141);
+            this.totalPriceextBox.Name = "totalPriceextBox";
+            this.totalPriceextBox.Size = new System.Drawing.Size(100, 20);
+            this.totalPriceextBox.TabIndex = 32;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(409, 108);
+            this.label5.Location = new System.Drawing.Point(346, 148);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 13);
-            this.label5.TabIndex = 34;
-            this.label5.Text = "Item ID";
-         
+            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Total Price";
             // 
             // OrderUi
             // 
@@ -196,15 +192,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.customerIdTextBox);
+            this.Controls.Add(this.totalPriceextBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.totalPriceTextBox);
+            this.Controls.Add(this.itemNameTextBox);
             this.Controls.Add(this.showDataGridView);
-            this.Controls.Add(this.Address);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.itemIdTextBox);
+            this.Controls.Add(this.custNameTextBox);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.quantityTextBox);
             this.Controls.Add(this.searchButton);
@@ -223,12 +218,12 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox totalPriceTextBox;
+        private System.Windows.Forms.TextBox itemNameTextBox;
         private System.Windows.Forms.DataGridView showDataGridView;
-        private System.Windows.Forms.Label Address;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox itemIdTextBox;
+        private System.Windows.Forms.TextBox custNameTextBox;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox quantityTextBox;
         private System.Windows.Forms.Button searchButton;
@@ -236,8 +231,7 @@
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button showButton;
         private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.TextBox customerIdTextBox;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox totalPriceextBox;
         private System.Windows.Forms.Label label5;
     }
 }
